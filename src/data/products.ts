@@ -1,5 +1,5 @@
 import { Product, Category } from '../types';
-
+// Products
 export const categories: Category[] = [
   {
     id: 'graphics-cards',

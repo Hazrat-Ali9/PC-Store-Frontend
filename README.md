@@ -28,26 +28,8 @@ A modern and responsive eCommerce web application for buying computer products a
 | **Stripe**      | Payment integration             |
 | **Vercel**      | Deployment platform             |
 
----
 
-## 📁 Folder Structure
 
----
 
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/hazrat-pc-shop.git
-cd hazrat-pc-shop    
-
-👨‍💻 Author
-
-Hazrat Ali
-Frontend Engineer | Passionate about eCommerce UX
-Portfolio | LinkedIn
-
-📜 License
-This project is licensed under the MIT License.
 
 

@@ -28,7 +28,9 @@ A modern and responsive eCommerce web application for buying computer products a
 | **Stripe**      | Payment integration             |
 | **Vercel**      | Deployment platform             |
 
+## License
 
+[MIT License](LICENSE)
 
 
 

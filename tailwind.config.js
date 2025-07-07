@@ -111,3 +111,4 @@ export default {
   },
   plugins: [],
 };
+// Tailwind config

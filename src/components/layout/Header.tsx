@@ -28,6 +28,14 @@ export const Header: React.FC = () => {
 
   const totalItems = getTotalItems();
 
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setMobileMenuOpen(false);
+    }
+  };
+
   return (
     <motion.header
       initial={{ y: -100 }}
@@ -40,7 +48,8 @@ export const Header: React.FC = () => {
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="flex items-center"
+            className="flex items-center cursor-pointer"
+            onClick={() => scrollToSection('#home')}
           >
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center">
@@ -57,15 +66,15 @@ export const Header: React.FC = () => {
             {navigation.map((item) => {
               const IconComponent = item.icon;
               return (
-                <motion.a
+                <motion.button
                   key={item.name}
-                  href={item.href}
+                  onClick={() => scrollToSection(item.href)}
                   whileHover={{ scale: 1.1 }}
                   className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors duration-200"
                 >
                   <IconComponent className="w-4 h-4" />
                   <span>{item.name}</span>
-                </motion.a>
+                </motion.button>
               );
             })}
           </nav>
@@ -164,15 +173,14 @@ export const Header: React.FC = () => {
               {navigation.map((item) => {
                 const IconComponent = item.icon;
                 return (
-                  <a
+                  <button
                     key={item.name}
-                    href={item.href}
-                    className="flex items-center space-x-2 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors duration-200"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={() => scrollToSection(item.href)}
+                    className="flex items-center space-x-2 py-2 w-full text-left text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors duration-200"
                   >
                     <IconComponent className="w-4 h-4" />
                     <span>{item.name}</span>
-                  </a>
+                  </button>
                 );
               })}
             </nav>

@@ -39,26 +39,7 @@ A modern and responsive eCommerce web application for buying computer products a
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/hazrat-pc-shop.git
-cd hazrat-pc-shop
-
-2. Install Dependencies
-
-npm install
-
-3. Run the Development Server
-
-npm run dev
-
-💳 Stripe Setup
-
-Create a Stripe account
-
-Get your Publishable key and Secret key
-
-Add them in a .env file:
-
-VITE_STRIPE_PUBLIC_KEY=your_public_key
-VITE_STRIPE_SECRET_KEY=your_secret_key
+cd hazrat-pc-shop    
 
 👨‍💻 Author
 

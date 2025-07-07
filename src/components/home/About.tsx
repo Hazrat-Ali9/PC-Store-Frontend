@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, Users, Truck, Shield, Clock, Star } from 'lucide-react';
 import { GlassCard } from '../ui/GlassCard';
-
+// about tsx
 export const About: React.FC = () => {
   const stats = [
     { icon: Users, label: 'Happy Customers', value: '50,000+' },

@@ -5,7 +5,7 @@ import { useStore } from '../../store/useStore';
 import { Button } from '../ui/Button';
 import { GlassCard } from '../ui/GlassCard';
 import { CheckoutModal } from '../checkout/CheckoutModal';
-
+// card sidebar
 export const CartSidebar: React.FC = () => {
   const {
     isCartOpen,

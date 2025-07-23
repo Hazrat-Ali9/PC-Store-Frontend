@@ -17,7 +17,7 @@ import { useStore } from '../../store/useStore';
 import { GlassCard } from '../ui/GlassCard';
 import { Button } from '../ui/Button';
 import toast from 'react-hot-toast';
-
+// Checkout Modal
 interface CheckoutModalProps {
   isOpen: boolean;
   onClose: () => void;
